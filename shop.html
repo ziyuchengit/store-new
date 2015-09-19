@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="jquery.js"></script>
+    <link rel="stylesheet" type="text/css" href="shop.css">
+    <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<div id="screen"><span><img src="img/close1.png"></span><div id="orderPage">
+    <p>预约</p>
+    <div id="form1">
+    <form action="#" method="post">
+       <div id="po"> <small>您的姓名</small>
+        <p> <input type="text" id="name1" ></p>
+        <small>您的电话</small>
+        <p><input type="text" id="tel"></p></div>
+        <p><input type="submit" id="su" value="确认预约"></p>
+    </form></div>
+</div></div>
+<div id="title">
+    <img id="wd" src="img/weddingPic1.png"><div id="nav"><button id="back"></button><p>套餐</p><button class="like"></button><button id="share"></button></div>
+</div>
+<div id="intro"><strong>【看婚礼】红色复古特惠套餐</strong><p>￥19999</p></div>
+<div id="word">
+    <strong>套餐描述</strong>
+    <p>
+
+    一盏灯，忆往昔;</br>
+    一段情，终成圆;</br>
+    在这个喜庆的日子里，感动无处不在;
+
+    </p>
+</div>
+<div id="serve">
+    <p>包含服务</p>
+    <ul>
+        <li><img id="photo" src="img/photo.png"><p>摄影师</p> </li>
+        <li><img id="video" src="img/video.png"><p>摄像师</p> </li>
+        <li><img id="mic" src="img/mic.png"><p>司仪</p> </li>
+        <li><img id="cosmetic" src="img/cosmetic.png"><p>化妆师</p> </li>
+    </ul>
+</div>
+<div id="detail">
+    <strong>套餐详情</strong>
+    <div id="region"><strong>服务地区</strong><p>浙江省</p></div>
+    <div id="flash"><strong>视频展示</strong><video src="img/kanhunlivideo.mp4" controls="controls"></video></div>
+    <div id="photoDetail">
+        <strong>图片展示</strong>
+        <ul id="photoList">
+            <li><a href="#"><img src="img/casePic1.png"></a></li>
+            <li><a href="#"><img src="img/casePic2.png"></a></li>
+            <li><a href="#"><img src="img/casePic1.png"></a></li>
+        </ul>
+    </div>
+</div>
+<footer></footer>
+<div class="menu">
+    <ul>
+        <li><img src="img/love2.png"></li>
+        <li><img src="img/contact2.png"></li>
+        <li id="order1"><img src="img/order.png"></li>
+    </ul>
+</div>
+
+<script>
+    $(function(){
+        $('#order1').click(function(){
+            $('#screen').show()
+        })
+    })
+
+    $(function(){
+        $('#screen>span').click(function(){
+            $('#screen').hide()
+        })
+    })
+    var flag=0;
+
+        $(function(){
+            $('#nav').css('opacity','1').css('background-color','transparent');
+            $('#back').css("background","url('img/back.png')").css("background-size","100% 100%");
+            if(flag==0){
+            $('#nav>button:eq(1)').css("background","url('img/Like.png')").css("background-size","100% 100%");}
+            $('#share').css("background","url('img/share.png')").css("background-size","100% 100%");
+            $('#nav>p').text('');
+            $(window).scroll(function(){
+                if($(window).scrollTop()>=10){
+                var op=$(window).scrollTop()/160;
+                    $('#nav').css('background-color','white');
+                    $('#back').css("background","url('img/back2.png')").css("background-size","100% 100%");
+                    if(flag==0){
+                    $('#nav>button:eq(1)').css("background","url('img/Like3.png')").css("background-size","100% 100%");}
+                    $('#share').css("background","url('img/share2.png')").css("background-size","100% 100%");
+                    $('#nav>p').text('套餐');
+                $('#nav').css('opacity',op);
+                }else{
+                    $('#nav').css('opacity','1').css('background-color','transparent');
+          $('#back').css("background","url('img/back.png')").css("background-size","100% 100%");
+                    if(flag==0){
+                    $('#nav>button:eq(1)').css("background","url('img/Like.png')").css("background-size","100% 100%");}
+                    $('#share').css("background","url('img/share.png')").css("background-size","100% 100%");
+                    $('#nav>p').text('');
+                }
+            })
+        })
+
+
+    $(function(){
+            $('#nav>button:eq(1)').toggle(function(){
+                $(this).css("background","url('img/Like2.png')").css("background-size","100% 100%");
+                flag=1;
+            },function(){
+                if($(window).scrollTop()>=10){
+                    $(this).css("background","url('img/Like3.png')").css("background-size","100% 100%");
+                }else{
+                    $(this).css("background","url('img/Like.png')").css("background-size","100% 100%");
+                };flag=0
+            })
+    })
+
+    $(function(){
+        $('#po>p>input').focus(function(){
+            $(this).css('border-bottom','1px #F78CA6 solid')
+        }).blur(function(){
+            $('this').css('border-bottom','1px #black solid')
+        })
+    })
+
+</script>
+</body>
+</html>

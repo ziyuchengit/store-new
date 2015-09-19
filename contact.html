@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="jquery.js"></script>
+    <link rel="stylesheet" type="text/css" href="contact.css">
+    <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<div id="bg"><img src="img/bg.png"> </div>
+<div id="title"><img src="img/logo2.png"></div>
+<div id="companyIntro"><p>公司介绍</p></div>
+<div id="intro"><p>看婚礼是国内最专业的婚礼云服务平台，
+    致力于让婚庆公司创建更好的婚礼现场互动平台，让新人拥有更美好的回忆记录，让婚宴嘉宾更多的参于与享受婚礼</p>
+</div>
+<div id="shopIntro"><p>店铺</p></div>
+<div id="shopCase">
+<div class="shopAll">
+<div class="shopDetail">
+    <img class="sLogo" src="img/shopLogo.png">
+    <h4>看婚礼杭州店</h4>
+    <img class="moreArrow" src="img/more.png">
+</div>
+    <ul>
+        <li><img src="img/phone.png" style="margin-left: -8px"><p>18868824007</p></li>
+        <li><img src="img/tel.png" style="height: 27px"><p>5150084</p> </li>
+        <li><img src="img/qq.png"><p>418814759</p></li>
+        <li><img src="img/wechat.png"><p>wechat</p></li>
+        <li><img src="img/local.png"><a href="#"><p style="font-size: 10px">杭州市余杭区</p></a></li>
+    </ul>
+</div>
+
+<div class="shopAll">
+    <div class="shopDetail">
+        <img class="sLogo" src="img/shopLogo.png">
+        <h4>看婚礼杭州店</h4>
+        <img class="moreArrow" src="img/more.png">
+    </div>
+    <ul>
+        <li><img src="img/phone.png" style="margin-left: -8px"><p>18868824007</p></li>
+        <li><img src="img/tel.png" style="height: 27px"><p>5150084</p> </li>
+        <li><img src="img/qq.png"><p>418814759</p></li>
+        <li><img src="img/wechat.png"><p>wechat</p></li>
+        <li><img src="img/local.png"><a href="#"><p style="font-size: 10px">杭州市余杭区</p></a></li>
+    </ul>
+</div>
+
+</div>
+
+<script>
+    $(function(){
+
+        $(".shopDetail").toggle(function(){
+           var item=$('.shopAll>ul').get($(this).parent().index());
+            $(item).slideDown();
+            var item1=$('.moreArrow').get($(this).parent().index());
+            $(item1).attr('src','img/collect.png');
+        },function(){
+            var item=$('.shopAll>ul').get($(this).parent().index());
+            $(item).slideUp();
+            var item1=$('.moreArrow').get($(this).parent().index());
+            $(item1).attr('src','img/more.png');
+        })
+    })
+
+</script>
+</body>
+</html>

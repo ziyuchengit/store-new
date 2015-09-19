@@ -1,0 +1,178 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background-color: #F7FAFA;
+
+}
+#title{
+    height: 40px;
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    z-index: 100;
+}
+#back{
+    border: none;
+    background-color: transparent;
+   background-image: url("img/back2.png");
+    background-size: 100% 100%;
+    width: 10px;
+    height: 20px;
+    position: absolute;
+    left: 3%;
+    top: 25%;
+}
+#share{
+    border: none;
+    background-color: transparent;
+    background-image: url("img/share2.png");
+    background-size: 100% 100%;
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    left: 90%;
+    top: 24%;
+}
+#title p{
+    color: #f36286;
+    width: 50px;
+    height: 25px;
+    margin-left: -25px;
+    margin-top: -12.5px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    font-size: 20px;
+    z-index: 3;
+
+}
+#logo{
+    clear: both;
+    position: relative;
+    height: 250px;
+
+}
+#logo>img{
+    width: 80%;
+    margin-left: -40%;
+    margin-top: -30%;
+    position: absolute;
+    left: 50%;
+    top: 70%;
+}
+#logo>strong{
+    width: 100px;
+    height: 40px;
+    margin-left: -50px;
+    margin-top: -20px;
+    position: absolute;
+    left: 52%;
+    top: 80%;
+    font-size: 20px;
+}
+#weddingAdress{
+    width: 95%;
+    margin-left: -47.5%;
+    background-color: white;
+    position: relative;
+    left: 50%;
+    border: 1px white solid;
+    border-radius: 4px;
+}
+#weddingAdress>strong{
+    margin-left: 15px;
+    padding-top: 10px;
+    float: left;
+}
+#weddingAdress>p{
+    clear: both;
+    margin-top: 13%;
+    padding-top: 7px;
+    margin-left: 30px;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+#detail{
+    width: 95%;
+    margin-left: -47.5%;
+    position: relative;
+    left: 50%;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 4px;
+}
+#detail>strong{
+    margin-left: 15px;
+    padding-top: 10px;
+    float: left;
+}
+#flash{
+    position: relative;
+    width: 100%;
+    height: 215px;
+    float: left;
+}
+#flash>strong {
+    font-size: 15px;
+    margin-left: 25px;
+    margin-top: 27px;
+    float: left;
+}
+#flash>video{
+    float: left;
+    width: 85%;
+    height: 200px;
+    margin-left: -42.5%;
+    position: absolute;
+    left: 50%;
+    top: 38px;
+}
+#photoDetail{
+    clear: both;
+}
+#photoDetail strong{
+    font-size: 15px;
+    margin-left: 25px;
+    margin-top: 40px;
+    float: left;
+}
+#photoList li{
+    list-style-type: none;
+    clear: both;
+}
+#photoDetail li a img{
+    width: 85%;
+    margin-left: 8%;
+    margin-top: 5px;
+}
+footer{
+    clear: both;
+    height: 50px;
+}
+#menu{
+    border: 1px black solid;
+    height: 44px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    border-top: 1px #E6E8E8 solid;
+    background-color: white;
+}
+#menu span{
+    float: left;
+    width: 130px;
+    height: 30px;
+    margin-left: -65px;
+    margin-top: -15px;
+    position: absolute;
+    left: 48%;
+    top: 50%;
+}
+#menu span img{
+   float: left;
+    height: 25px;
+}

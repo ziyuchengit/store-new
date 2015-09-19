@@ -1,0 +1,191 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-weight: normal;
+    font-size: 15px;
+    background-color: #FAFCFC;
+}
+a{
+    color: black;
+}
+body{
+    width: 100%;
+    height: 100%;
+
+}
+
+#title{
+    width: 100%;
+    height: 180px;
+    background-image: url("img/title.png");
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    border-bottom: 7px transparent solid;
+    border-radius:0 0 10% 10% ;
+    position: relative;
+}
+#title img{
+    width: 68px;
+    height: 68px;
+    margin-left: -34px;
+    margin-top: -34px;
+    position: absolute;
+    left: 50%;
+    top: 100%;
+}
+#main{
+    margin-top: 60px;
+}
+#main>p{
+    border-left: 4px #9FFEFE solid;
+    height: 24px;
+    margin-left: 14px;
+    font-size: 20px;
+    font-weight: 600;
+    padding-left: 17px;
+}
+#setWedding{
+    margin-top: 15px;
+}
+#setWedding ul li{
+    float: left;
+    list-style-type: none;
+    border: 1px #E8EAEA solid;
+    border-radius: 7px;
+    height: 180px;
+    width: 46%;
+    margin-left: 2%;
+    margin-top: 2%;
+}
+.weddingIntro{
+    width: 100%;
+    height: 100%;
+}
+.weddingIntro img{
+    width: 100%;
+    height: 70%;
+    border-radius: 7px;
+}
+.weddingIntro p{
+    padding-right: 3px;
+   text-align: right;
+    color: #FF6868;
+}
+#more{
+    width: 100px;
+    margin-left: -50px;
+    height: 40px;
+    clear: both;
+    position: relative;
+    left: 50%;
+}
+#more img{
+    float: left;
+    width: 23px;
+    position: absolute;
+    margin-left: -35px;
+    top: 46%;
+    left: 53%;
+}
+#more span{
+    font-size: 15px;
+    color: #B6B6B6;
+    width: 50px;
+    height: 20px;
+   float: left;
+    position: absolute;
+    margin-left:-15px ;
+    left: 57%;
+    top: 15px;
+}
+#main2{
+    margin-top: 10%;
+    margin-bottom: 30px;
+}
+#main2>p{
+    border-left: 4px #9FFEFE solid;
+    height: 24px;
+    margin-left: 14px;
+    font-size: 20px;
+    font-weight: 600;
+    padding-left: 17px;
+}
+#weddingCase{
+    margin-top: 15px;
+}
+#weddingCase ul li{
+    float: left;
+    list-style-type: none;
+    border: 1px #E8EAEA solid;
+    border-radius: 7px;
+    height: 170px;
+    width: 46%;
+    margin-left: 2%;
+    margin-top: 2%;
+}
+#weddingCase ul li strong{
+    float: left;
+    padding-left: 10px;
+    font-size: 14px;
+    margin-bottom: 0px;
+    padding-top: 10px;
+}
+#weddingCase ul li img{
+    width: 100%;
+    height: 80%;
+    border-radius: 7px;
+}
+#more2{
+    width: 100px;
+    margin-left: -50px;
+    height: 40px;
+    clear: both;
+    position: relative;
+    left: 50%;
+}
+#more2 img{
+    float: left;
+    width: 23px;
+    position: absolute;
+    margin-left: -35px;
+    top: 46%;
+    left: 53%;
+}
+#more2 span{
+    font-size: 15px;
+    color: #B6B6B6;
+    width: 50px;
+    height: 20px;
+    float: left;
+    position: absolute;
+    margin-left:-15px ;
+    left: 57%;
+    top: 15px;
+}
+footer{
+    height: 40px;
+}
+#menu{
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: white;
+    border-top: 1px #E6E8E8 solid;
+
+}
+#menu>ul>li{
+    float: left;
+    list-style-type: none;
+    width: 49.1%;
+    height: 50px;
+    position: relative;
+}
+#menu>ul>li>img{
+    width: 100px;
+    margin-left: -50px;
+    margin-top: -10px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}

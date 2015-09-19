@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="jquery-2.1.4.js"></script>
+    <link rel="stylesheet" type="text/css" href="store.css">
+    <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <div id="title">
+<img src="img/logo.png">
+    </div>
+<div id="main">
+    <p>婚礼套餐</p>
+    <div id="setWedding">
+<ul>
+    <a href="#"><li><div class="weddingIntro"><img src="img/weddingPic1.png"><strong>【看婚礼】红色复古特惠套餐</strong><p>￥19999</p></div></li></a>
+    <a href="#"> <li><div class="weddingIntro"><img src="img/weddingPic2.png"><strong>【看婚礼】年度精选浪漫套餐</strong><p>￥19999</p></div></li></a>
+        <a href="#"> <li><div class="weddingIntro"><img src="img/weddingPic1.png"><strong>【看婚礼】红色复古特惠套餐</strong><p>￥19999</p></div></li></a>
+            <a href="#"> <li><div class="weddingIntro"><img src="img/weddingPic2.png"><strong>【看婚礼】年度精选浪漫套餐</strong><p>￥19999</p></div></li></a>
+                <a href="#"> <li><div class="weddingIntro"><img src="img/weddingPic1.png"><strong>【看婚礼】红色复古特惠套餐</strong><p>￥19999</p></div></li></a>
+                    <a href="#"><li><div class="weddingIntro"><img src="img/weddingPic2.png"><strong>【看婚礼】年度精选浪漫套餐</strong><p>￥19999</p></div></li></a>
+                        <a href="#"> <li><div class="weddingIntro"><img src="img/weddingPic1.png"><strong>【看婚礼】红色复古特惠套餐</strong><p>￥19999</p></div></li></a>
+                            <a href="#"> <li><div class="weddingIntro"><img src="img/weddingPic2.png"><strong>【看婚礼】年度精选浪漫套餐</strong><p>￥19999</p></div></li></a>
+
+</ul>
+        <div id="more"><img src="img/more.png"><span>更多</span></div>
+    </div>
+
+</div>
+    <div id="main2">
+        <p>婚礼案例</p>
+        <div id="weddingCase">
+            <ul>
+                <a href="#"> <li><img src="img/casePic1.png"><strong>爱的旅程</strong></li></a>
+                    <a href="#"> <li><img src="img/casePic2.png"><strong>烛光之爱</strong></li></a>
+                        <a href="#"> <li><img src="img/casePic1.png"><strong>爱的旅程</strong></li></a>
+                            <a href="#"> <li><img src="img/casePic2.png"><strong>烛光之爱</strong></li></a>
+                                <a href="#"> <li><img src="img/casePic1.png"><strong>爱的旅程</strong></li></a>
+                                    <a href="#"> <li><img src="img/casePic2.png"><strong>烛光之爱</strong></li></a>
+                                        <a href="#"> <li><img src="img/casePic1.png"><strong>爱的旅程</strong></li></a>
+                                            <a href="#"><li><img src="img/casePic2.png"><strong>烛光之爱</strong></li></a>
+            </ul>
+            <div id="more2"><img src="img/more.png"><span>更多</span></div>
+        </div>
+    </div>
+    <footer></footer>
+    <div id="menu">
+<ul>
+    <li><img src="img/love.png"></li>
+    <li><img src="img/contact.png"></li>
+</ul>
+    </div>
+<script>
+    var hidden1=$('#setWedding>ul>a>li:gt(3)');
+    $(hidden1).hide();
+    $(function(){
+        $('#more').click(function(){
+            if(hidden1.is(":visible")){
+                hidden1.slideUp();
+                $('#more>img').attr('src','img/more.png');
+                $('#more>span').text('更多')
+            }else{
+                hidden1.slideDown();
+                $('#more>img').attr('src','img/collect.png');
+                $('#more>span').text('收起')
+            }
+        })
+    })
+
+    var hidden2=$('#weddingCase>ul>a>li:gt(3)');
+    $(hidden2).hide();
+    $(function(){
+        $('#more2').click(function(){
+            if(hidden2.is(":visible")){
+                hidden2.slideUp();
+                $('#more2>img').attr('src','img/more.png');
+                $('#more2>span').text('更多')
+            }else{
+                hidden2.slideDown();
+                $('#more2>img').attr('src','img/collect.png');
+                $('#more2>span').text('收起')
+            }
+        })
+    })
+</script>
+</body>
+</html>
